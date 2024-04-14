@@ -864,9 +864,7 @@ font-weight: 400;
     gap: 8px;
 }
 
-.policy-span{
-display: inline-flex;
-}
+
 .policy-label span{
 display: inline-flex;
 
