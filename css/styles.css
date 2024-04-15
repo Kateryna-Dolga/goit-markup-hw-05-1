@@ -677,10 +677,10 @@ background-color: rgba(46, 47, 66, 0.4);
     top: 0;
     left: 0;
 
- 
+ /*
 opacity: 0;
 pointer-events: none;
-visibility: hidden; 
+visibility: hidden; */
 }
 .modal{
     padding: 72px 24px 24px 24px;
@@ -914,6 +914,7 @@ margin-right: 8px;
 
 .policy:checked + .policy-label span {
    background-color: #404bbf;
+border: none;
 
    fill:#F4F4FD;;
 }
