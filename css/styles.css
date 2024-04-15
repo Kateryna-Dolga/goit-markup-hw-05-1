@@ -593,7 +593,7 @@ display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
-
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border-radius: 4px;
         padding: 8px 24px;
         width: 165px;
@@ -663,7 +663,11 @@ font-weight: 500;
 
 /*------------------/footer----------------------------------------------------------------*/
 
-
+.is-open{
+opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+}
 .modal-overley{
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     position: fixed;
@@ -758,7 +762,9 @@ position: relative;
 .modal-input:focus{
     border-color: #4D5AE5;
 }
-
+.modal-input:hover{
+    border-color: #4D5AE5;
+}
  .modal-input:focus .modal-name-svg{
  
     fill: #4D5AE5;
