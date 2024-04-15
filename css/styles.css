@@ -611,11 +611,13 @@ display: flex;
             cursor: pointer;
 }
 .footer-button:hover {
-    background-color: #404BBF;
+    background-color: #404bbf;
+    border: none;
 }
 
 .footer-button:focus {
-    background-color: #404BBF;
+    background-color: #404bbf;
+    border: none;
 }
 
 
