@@ -585,7 +585,7 @@ height: 40px;
  
 .f-svg-icon{
     fill: #f4f4fd;
-margin-left: 16px;
+
 }
 
 .footer-button{
@@ -593,7 +593,7 @@ display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    gap: 16px;
+
     border-radius: 4px;
         padding: 8px 24px;
         width: 165px;
@@ -610,6 +610,14 @@ display: flex;
             border: none;
             cursor: pointer;
 }
+.footer-button:hover {
+    background-color: #404BBF;
+}
+
+.footer-button:focus {
+    background-color: #404BBF;
+}
+
 
 .form-email{
 border: 1px solid #fff;
@@ -625,7 +633,12 @@ border: 1px solid #fff;
         background-color: transparent;
         padding-left: 16px;
 }
-.footer-text{
+
+.form-email::placeholder{
+    color: #fff;
+}
+
+.form-text{
   
 font-weight: 500;
     font-size: 16px;
@@ -661,6 +674,11 @@ background-color: rgba(46, 47, 66, 0.4);
     height: 100%;
     top: 0;
     left: 0;
+
+ 
+opacity: 0;
+pointer-events: none;
+visibility: hidden; 
 }
 .modal{
     padding: 72px 24px 24px 24px;
@@ -730,7 +748,7 @@ position: relative;
     
     border: 1px solid rgba(46, 47, 66, 0.4);
         border-radius: 4px;
-    
+    font-size: 12px;
         height: 40px;
         width: 100%;
 }
@@ -754,6 +772,10 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .modal-input:focus + .modal-name-svg{
 fill: #4D5AE5;
+}
+
+.modal-input:hover + .modal-name-svg {
+    fill: #4D5AE5;
 }
 .modal-button-top{
     display: flex;
@@ -802,7 +824,9 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .modal-textarea:focus {
  border-color: #4D5AE5;
 }
-
+.modal-textarea:hover {
+    border-color: #4D5AE5;
+}
 .div-policy{
     margin-bottom: 24px;
 }
@@ -836,7 +860,13 @@ fill: #ffffff;
                     display: block;
                     margin: 0 auto;
 }
+.modal-button:hover {
+    background-color: #404BBF;
+}
 
+.modal-button:focus {
+    background-color: #404BBF;
+}
 
 .privacy-policy-a{
  
@@ -872,7 +902,7 @@ width: 16px;
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
-
+margin-right: 8px;
     align-items: center;
     justify-content: center;
     fill: transparent;
@@ -882,8 +912,15 @@ width: 16px;
 
 .policy:checked + .policy-label span {
    background-color: #404bbf;
-   border: none;
+
    fill:#F4F4FD;;
+}
+.policy:focus + .policy-label span {
+    border-color: #4D5AE5;
+}
+
+.policy:hover + .policy-label span {
+    border-color: #4D5AE5;
 }
 
 .visually-hidden{
@@ -895,6 +932,8 @@ width: 16px;
     width: 1px;
     
 }
+
+
 /*.span-privacy{
     width: 16px;
     height: 16px;
