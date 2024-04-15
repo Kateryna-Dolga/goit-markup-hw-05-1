@@ -663,11 +663,7 @@ font-weight: 500;
 
 /*------------------/footer----------------------------------------------------------------*/
 
-.is-open{
-opacity: 1;
-    pointer-events: auto;
-    visibility: visible;
-}
+
 .modal-overley{
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     position: fixed;
@@ -685,7 +681,11 @@ pointer-events: none;
 visibility: hidden; 
 }
 
-
+.is-open {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+}
 .modal{
     padding: 72px 24px 24px 24px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
